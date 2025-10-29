@@ -1,7 +1,7 @@
 {
   "vendor": "madumfm2",
   "name": "roleta",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "Roleta de Prêmios",
   "description": "Roleta de Prêmios 2025",
   "builders": {
