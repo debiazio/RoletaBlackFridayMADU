@@ -303,30 +303,6 @@ const Roleta = () => {
       <div className={`${styles.formularioRoleta} ${showSpinButton ? styles.oculto : ''}`}>
         {/* Conteúdo do formulário */}
       </div>
-
-      {/* Tabela de Prêmios */}
-      {!showSpinButton && (
-        <div className={styles.prizeTable}>
-          <h3>PRÊMIOS</h3>
-          <table>
-            <tbody>
-              <tr>
-                <td>FRETE GRÁTIS</td>
-                <td>ENVELOPE 9x 23 CM</td>
-              </tr>
-              <tr>
-                <td>ENVELOPE 5X13 CM</td>
-                <td>PORTA ESMALTES</td>
-              </tr>
-              <tr>
-                <td>BOX MAD.U</td>
-                <td>VALE DESCONTO DE R$50</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      )}
-
       <div className={styles.container}>
         {/* Div lateral */}
         {showSidebar && (
@@ -356,13 +332,13 @@ const Roleta = () => {
                     ? selectedPrize && selectedPrize.code
                       ? (
                         <>
-                          <span style={{ color: '#FC51A7', textShadow: 'none' }}>
+                          <span style={{ color: '#173866', textShadow: 'none' }}>
                             Copie o seu cupom:<br /> {/* Quebra de linha aqui */}
                             &nbsp; {/* Texto adicional com espaço não quebrável */}
                           </span>
                           <span
                             onClick={() => copyToClipboard(selectedPrize.code.toUpperCase())}
-                            style={{ cursor: 'pointer', color: '#FC51A7', textShadow: 'none', fontSize: '30px' }} // Estilo para indicar que é clicável
+                            style={{ cursor: 'pointer', color: '#173866', textShadow: 'none', fontSize: '30px' }} // Estilo para indicar que é clicável
                           >
                             {selectedPrize.code.toUpperCase()} {/* Exibe o código do cupom */}
                             <ul className={styles.List}>

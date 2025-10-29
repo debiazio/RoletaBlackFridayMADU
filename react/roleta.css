@@ -70,7 +70,7 @@
   left: 39%;
   transform: translateX(-50%);
   z-index: 1;
-  width: 100px;
+  width: 400px;
 }
 
 .prizesOverlay {
@@ -165,8 +165,8 @@
 /* Classe que faz o pointer vibrar */
 .pointerVibrate {
   animation: vibrate 0.1s infinite;
-  transform-origin: 60% 90%;
-  left: 30%;
+  transform-origin: 30% 95%;
+  left: 1px;
 }
 
 
@@ -205,7 +205,7 @@
 
 .spinButton {
   border: none;
-  background-color: #F466BE;
+  background-color: #173866;
   color: white;
   font-size: 16px;
   font-weight: 900;
@@ -219,7 +219,7 @@
 }
 
 .spinButton:hover {
-  box-shadow: 0px 0px 30px 15px rgba(233, 11, 145, 0.8);
+  box-shadow: 0px 0px 30px 15px #173866;
 }
 
 .spinButton:disabled {
@@ -228,7 +228,7 @@
 
 .pulsatingButton {
   animation: pulse 1.1s infinite;
-  background-color: #F466BE;
+  background-color: #173866;
   /* Cor de fundo do botão */
   color: #fff;
 }
@@ -249,7 +249,7 @@
 .botaowhats {
   display: flex;
   border-radius: 20px;
-  background-color: #E90B91;
+  background-color: #173866;
   padding: 4px;
 }
 
@@ -272,15 +272,6 @@
   position: absolute;
 }
 
-/* cabecalho tabela */
-.prizeTable h3 {
-  text-align: center;
-  background-color: var(--rosa-da-rosa);
-  padding: 3px;
-  border-radius: 10px 10px 0px 0px;
-  margin: 0;
-
-}
 
 .prizeTable table {
   border-collapse: collapse;
@@ -293,7 +284,7 @@
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 #E90B91;
+    box-shadow: 0 0 0 0 #173866;
   }
 
   70% {
@@ -320,7 +311,7 @@
 }
 
 .botaosite {
-  background-color: #E90B91;
+  background-color: #173866;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -350,7 +341,7 @@
 }
 
 .logoImageIdealine {
-  background-color: #fc51a7;
+  background-color: #173866;
   width: 300px;
   position: absolute;
   top: 0;
@@ -393,14 +384,14 @@
   background-color: #FFFFFF1A;
   font-size: 32px;
   font-weight: 900;
-  color: #F466BE;
+  color: #ffff;
   font-family: var(--fonte-montserrat);
   text-align: center;
   width: 446px;
 }
 
 .conteinerTextos2LayoutTorcendo {
-  color: #ff489c;
+  color: #173866;
   font-family: var(--fonte-montserrat);
   font-size: 25px;
   font-weight: 900;
@@ -495,7 +486,7 @@
 }
 
 .couponMessage strong {
-  color: var(--rosa-da-rosa);
+  color: #173866;
   text-shadow: none;
 }
 
@@ -520,13 +511,13 @@
 .siteButton {
   padding: 5px;
   border-radius: 10px;
-  background-color: var(--rosa-da-rosa);
+  background-color: #173866;
   font-size: 12px;
   border: none;
   color: #ffffff;
   font-family: var(--fonte-montserrat);
   font-weight: 500;
-  box-shadow: 0 0 30px rgba(233, 11, 145, 0.8);
+  box-shadow: 0 0 30px #173866;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -554,7 +545,7 @@
     padding: 0 2px 0px 2px;
     padding: 0px;
     border-radius: 10px;
-    background-color: var(--rosa-da-rosa);
+    background-color: #173866;
     font-size: 8px;
   }
 
@@ -571,7 +562,7 @@
   }
 
   .logoImageIdealine {
-    background-color: #fc51a7;
+    background-color: #173866;
     width: 160px;
     position: absolute;
     top: 0;
@@ -594,7 +585,7 @@
   }
 
   .conteinerTextos2LayoutTorcendo {
-    color: #ff489c;
+    color: #173866;
     font-family: var(--fonte-montserrat);
     font-size: 22px;
     font-weight: 900;
