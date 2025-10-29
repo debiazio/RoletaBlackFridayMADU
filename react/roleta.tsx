@@ -332,7 +332,7 @@ const Roleta = () => {
         {showSidebar && (
           <div className={styles.sidebar}>
             <img
-              src="https://stermax.com.br/images_idealine/roleta/black-idealovers.webp"
+              src="https://stermax.com.br/images_idealine/roleta-madu/###"
               alt="Título Roleta Prêmios"
               className={styles.titleImage}
             />
@@ -394,7 +394,7 @@ const Roleta = () => {
                 {/* Botões de Compra */}
                 <div className={styles.buttonContainer}>
                   <button
-                      onClick={() => window.open('https://www.idealine.com.br', '_blank')}
+                      onClick={() => window.open('https://www.madumfm.com.br', '_blank')}
                       className={styles.siteButton}
                     >
                       COMPRAR PELO SITE E GARANTIR O MEU PRÊMIO
@@ -442,13 +442,13 @@ const Roleta = () => {
         {/* Div da roleta */}
         <div className={styles.wheelContainer}>
           <img
-            src="https://stermax.com.br/images_idealine/roleta/pointer.webp"
+            src="https://stermax.com.br/images_idealine/roleta-madu/Roleta-Madu-centro.webp"
             alt="Ponteiro"
             className={`${styles.pointer} ${spinning ? styles.pointerVibrate : ''}`}
           />
           <div className={styles.wheel} style={{ transform: `rotate(${rotation}deg)` }}>
             <img
-              src="https://stermax.com.br/images_idealine/roleta/roleta-idealine.webp"
+              src="https://stermax.com.br/images_idealine/roleta-madu/Roleta-Madu.webp"
               alt="Imagem da roleta"
               className={styles.wheelImage}
             />

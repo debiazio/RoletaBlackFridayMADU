@@ -1,9 +1,9 @@
 {
-  "vendor": "mfmgroup",
+  "vendor": "madumfm2",
   "name": "roleta",
-  "version": "0.0.12",
+  "version": "0.0.0",
   "title": "Roleta de Prêmios",
-  "description": "Roleta de Prêmios",
+  "description": "Roleta de Prêmios 2025",
   "builders": {
     "react": "3.x",
     "messages": "1.x",
