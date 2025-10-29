@@ -332,7 +332,7 @@ const Roleta = () => {
         {showSidebar && (
           <div className={styles.sidebar}>
             <img
-              src="https://stermax.com.br/images_idealine/roleta-madu/###"
+              src="https://stermax.com.br/images_idealine/roleta-madu/logo-padrao.webp"
               alt="Título Roleta Prêmios"
               className={styles.titleImage}
             />

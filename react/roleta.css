@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
+  --fonte-montserrat: 'Montserrat', sans-serif;
+
   --fonte-rubik: 'Rubik', sans-serif;
   --rosa-da-rosa: #fc51a7;
   --rosa-pink-escuro: #e90b91;
@@ -212,7 +214,7 @@
   transition: box-shadow 0.3s ease-in-out;
   text-transform: uppercase;
   padding: 10px;
-  font-family: "Rubik";
+  font-family: var(--fonte-montserrat);
   width: 446px;
 }
 
@@ -372,7 +374,7 @@
 }
 
 .textoSubtituloSegundaTela {
-  font-family: "Rubik";
+  font-family: var(--fonte-montserrat);
   color: #FFFFFF;
   font-size: 12px;
   font-weight: 900;
@@ -381,7 +383,7 @@
 
 .textoTituloSegundaTela {
   font-size: 24px;
-  font-family: "Rubik";
+  font-family: var(--fonte-montserrat);
   color: #FFFFFF;
   font-weight: 900;
   text-align: center;
@@ -392,14 +394,14 @@
   font-size: 32px;
   font-weight: 900;
   color: #F466BE;
-  font-family: "Rubik";
+  font-family: var(--fonte-montserrat);
   text-align: center;
   width: 446px;
 }
 
 .conteinerTextos2LayoutTorcendo {
   color: #ff489c;
-  font-family: "Rubik";
+  font-family: var(--fonte-montserrat);
   font-size: 25px;
   font-weight: 900;
 }
@@ -417,7 +419,7 @@
   bottom: 0;
   position: absolute;
   color: #ffffff;
-  font-family: "Rubik";
+  font-family: var(--fonte-montserrat);
   flex-direction: column;
   align-items: center;
 }
@@ -489,7 +491,7 @@
   margin: 0;
   color: #ffffff;
   text-shadow: 0 0 1px #ffffff, 0 0 5px #ffffff;
-  font-family: "Rubik";
+  font-family: var(--fonte-montserrat);
 }
 
 .couponMessage strong {
@@ -522,7 +524,7 @@
   font-size: 12px;
   border: none;
   color: #ffffff;
-  font-family: var(--fonte-rubik);
+  font-family: var(--fonte-montserrat);
   font-weight: 500;
   box-shadow: 0 0 30px rgba(233, 11, 145, 0.8);
   display: flex;
@@ -586,14 +588,14 @@
     position: relative;
     color: #ffffff;
     text-shadow: 0 0 1px #ffffff, 0 0 5px #ffffff;
-    font-family: "Rubik";
+    font-family: var(--fonte-montserrat);
     flex-direction: column;
     align-items: center;
   }
 
   .conteinerTextos2LayoutTorcendo {
     color: #ff489c;
-    font-family: "Rubik";
+    font-family: var(--fonte-montserrat);
     font-size: 22px;
     font-weight: 900;
   }
