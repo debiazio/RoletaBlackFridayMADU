@@ -558,7 +558,7 @@
     flex-direction: column;
     align-items: center;
     min-width: 600px;
-    margin-top: 5%;
+    margin-top: 20%;
   }
 
   .logoImageIdealine {
@@ -575,7 +575,7 @@
     width: 100%;
     display: flex;
     font-size: 12px;
-    bottom: -458px;
+    bottom: -200px;
     position: relative;
     color: #ffffff;
     text-shadow: 0 0 1px #ffffff, 0 0 5px #ffffff;
@@ -609,7 +609,7 @@
 
   .titleImage {
     width: 280px;
-    margin-top: 0;
+    margin-top: 180px;
     margin-bottom: 15px;
   }
 
@@ -656,6 +656,7 @@
     width: 40%;
     margin: 10px;
     text-align: center;
+    margin-bottom: 140px;
   }
 
   .segmentText {
@@ -687,6 +688,7 @@
 
   .spinButton {
     width: unset;
+    margin-bottom: 120px;
   }
 
   .textoTituloSegundaTela {
@@ -694,42 +696,44 @@
   }
 
   .roletaContainer {
-  min-height: 520px;
-}
+    min-height: 520px;
+  }
 
-/* Classe que faz o pointer vibrar */
-.pointerVibrate {
-  animation: vibrate 0.1s infinite;
-  transform-origin: 60% 90%;
-  left: 40%;
-}
+  /* Classe que faz o pointer vibrar */
+  .pointerVibrate {
+    animation: vibrate 0.1s infinite;
+    transform-origin: 60% 90%;
+    left: 40%;
+  }
 
-.couponMessage{
-  right: unset;
-}
+  .couponMessage {
+    right: unset;
+    bottom: -372px;
+    padding-bottom: 20px;
+  }
 
-.buttonContainer{
-  flex-direction: column;
-  align-items: center;
-}
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.whatsappButton{
-  padding: 8px;
-  font-size: 12px;
+  .whatsappButton {
+    padding: 8px;
+    font-size: 12px;
 
-}
+  }
 
-.siteButton{
-  padding: 0 8px;
-  font-size: 12px;
-}
+  .siteButton {
+    padding: 0 8px;
+    font-size: 12px;
+  }
 
-.iconeSacola{
-  margin-left: 5px;
-}
+  .iconeSacola {
+    margin-left: 5px;
+  }
 
-.whatsConsultoras{
-  margin-left: 5px;
-}
+  .whatsConsultoras {
+    margin-left: 5px;
+  }
 
 }
