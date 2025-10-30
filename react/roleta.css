@@ -70,7 +70,7 @@
   left: 39%;
   transform: translateX(-50%);
   z-index: 1;
-  width: 400px;
+  width: 100px;
 }
 
 .prizesOverlay {
@@ -165,8 +165,8 @@
 /* Classe que faz o pointer vibrar */
 .pointerVibrate {
   animation: vibrate 0.1s infinite;
-  transform-origin: 30% 95%;
-  left: 1px;
+  transform-origin: 80% 95%;
+  left: 30%;
 }
 
 
