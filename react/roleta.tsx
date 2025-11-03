@@ -351,7 +351,7 @@ const prizeRules: Record<string, { range: number[]; code: string }[]> = {
                 {/* Botões de Compra */}
                 <div className={styles.buttonContainer}>
                   <button
-                    onClick={() => window.open('https://www.stermaxhomeandhealth.com.br', '_blank')}
+                    onClick={() => window.open('https://www.madumfm.com.br', '_blank')}
                     className={styles.siteButton}
                   >
                     COMPRAR PELO SITE E GARANTIR O MEU PRÊMIO
@@ -360,8 +360,9 @@ const prizeRules: Record<string, { range: number[]; code: string }[]> = {
                   <button
                     onClick={() => {
                       if (selectedPrize) {
+                        const prizeCode = encodeURIComponent(selectedPrize.code.toUpperCase());
                         window.open(
-                          `https://wa.me/5541999710062?text=Olá, ganhei o cupom com o prêmio ${selectedPrize.code.toUpperCase()} na roleta, quero efetuar a compra e garantir meu prêmio`,
+                          `https://api.whatsapp.com/send?phone=5541996878783&text=Ol%C3%A1%2C%20ganhei%20o%20cupom%20com%20o%20pr%C3%AAmio%20${prizeCode}%20na%20roleta%2C%20quero%20efetuar%20a%20compra%20e%20garantir%20meu%20pr%C3%AAmio.%20%F0%9F%98%84`,
                           '_blank'
                         );
                       }
