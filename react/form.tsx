@@ -117,56 +117,60 @@ const ContactForm: React.FC = () => {
     setLoading(true)
     setSuccess(false)
 
-try {
-  const res = await fetch('/api/dataentities/PE/documents', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      Nome: form.nome,
-      Email: form.email,
-      Telefone: form.telefone
-    })
-  })
-
-  // 🔥 LOG PARA SABER SE PRODUÇÃO LIBEROU A ESCRITA
-  console.log(
-    '%c[FORM-ROLETA] Resultado do envio:',
-    'color:#4CAF50; font-weight:bold;',
-    {
-      status: res.status,
-      ok: res.ok,
-      url: window.location.href,
-      ambiente: window.location.hostname.includes('myvtex') ? 'DEV' : 'PROD'
+    const payload = {
+      nome: form.nome,
+      email: form.email,
+      telefone: form.telefone
     }
-  )
 
-  if (res.ok) {
-    setSuccess(true)
-    window.dispatchEvent(new Event('form-roleta-sucesso'))
+    const url = '/api/dataentities/CO/documents'
 
-    setForm({
-      nome: '',
-      email: '',
-      telefone: '',
-      aceitarComunicacao: false,
-      aceitarPrivacidade: false
+    console.log('[FORM-ROLETA] Enviando dados…', {
+      ambiente: window.location.host.includes('myvtex') ? 'DEV' : 'PROD',
+      url,
+      payload
     })
 
-    setErrors({
-      nome: '',
-      email: '',
-      telefone: '',
-      aceitarComunicacao: '',
-      aceitarPrivacidade: ''
-    })
-  } else {
-    alert('Erro ao enviar os dados.')
-  }
-} catch (err) {
-  console.log('%c[FORM-ROLETA] Erro de conexão:', 'color:red; font-weight:bold;', err)
-  alert('Erro de conexão.')
-}
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
 
+      console.log('[FORM-ROLETA] Resultado do envio:', {
+        ambiente: window.location.host.includes('myvtex') ? 'DEV' : 'PROD',
+        ok: res.ok,
+        status: res.status,
+        url: window.location.origin,
+      })
+
+      if (res.ok) {
+        setSuccess(true)
+        window.dispatchEvent(new Event('form-roleta-sucesso'))
+
+        setForm({
+          nome: '',
+          email: '',
+          telefone: '',
+          aceitarComunicacao: false,
+          aceitarPrivacidade: false
+        })
+
+        setErrors({
+          nome: '',
+          email: '',
+          telefone: '',
+          aceitarComunicacao: '',
+          aceitarPrivacidade: ''
+        })
+      } else {
+        alert(`Erro ao enviar os dados. Código: ${res.status}`)
+      }
+    } catch (err) {
+      console.error('[FORM-ROLETA] ERRO DE CONEXÃO:', err)
+      alert('Erro de conexão com o servidor.')
+    }
 
     setLoading(false)
   }
